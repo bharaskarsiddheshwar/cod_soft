@@ -1,55 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hello! I'm Siddheshwar Bharaskar, a web developer.</p>
-    </section>
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="siddh photo.jpeg" alt="Siddheshwar Bharaskar" class="profile-img">
-        <p>I am a web developer skilled in designing, coding, and modifying websites to create seamless user experiences and visually appealing interfaces. Proficient in various programming languages and tools, I ensure the functionality and performance of web applications.</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Water Park Ticket Booking</h3>
-            <img src="image.png" alt="Water Park Ticket Booking" class="project-img">
-            <p>This project involves designing and developing a web application for booking tickets at a water park. The application allows users to view available tickets, select dates, and make reservations online.</p>
-        </div>
-        <!-- Add more projects as needed -->
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2024 Siddheshwar Bharaskar. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button class="btn" onclick="clearDisplay()">C</button>
+      <button class="btn" onclick="appendToDisplay('/')">/</button>
+      <button class="btn" onclick="appendToDisplay('*')">*</button>
+      <button class="btn" onclick="appendToDisplay('-')">-</button>
+      <button class="btn" onclick="appendToDisplay('7')">7</button>
+      <button class="btn" onclick="appendToDisplay('8')">8</button>
+      <button class="btn" onclick="appendToDisplay('9')">9</button>
+      <button class="btn" onclick="appendToDisplay('+')">+</button>
+      <button class="btn" onclick="appendToDisplay('4')">4</button>
+      <button class="btn" onclick="appendToDisplay('5')">5</button>
+      <button class="btn" onclick="appendToDisplay('6')">6</button>
+      <button class="btn" onclick="appendToDisplay('1')">1</button>
+      <button class="btn" onclick="appendToDisplay('2')">2</button>
+      <button class="btn" onclick="appendToDisplay('3')">3</button>
+      <button class="btn" onclick="appendToDisplay('0')">0</button>
+      <button class="btn" onclick="appendToDisplay('.')">.</button>
+      <button class="btn" onclick="calculateResult()">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
